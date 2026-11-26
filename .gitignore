@@ -1,0 +1,12 @@
+# Compiled C programs and object files
+*.o
+*.out
+*.exe
+
+# Common compiler and debugger artifacts
+*.dSYM/
+*.gcda
+*.gcno
+*.profraw
+core
+core.*
