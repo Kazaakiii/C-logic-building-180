@@ -1,0 +1,27 @@
+/*
+ * Program 107: Hollow diamond
+ * Topic  : Star, number and alphabet patterns
+ * Build  : gcc -Wall -o hollow_diamond 107_hollow_diamond.c -lm
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include <math.h>
+
+int main(void) {
+    int n = 5;
+    for (int i = 1; i <= n; i++) {
+        for (int s = 1; s <= n - i; s++) printf(" ");
+        for (int j = 1; j <= 2 * i - 1; j++)
+            printf((j == 1 || j == 2 * i - 1) ? "*" : " ");
+        printf("\n");
+    }
+    for (int i = n - 1; i >= 1; i--) {
+        for (int s = 1; s <= n - i; s++) printf(" ");
+        for (int j = 1; j <= 2 * i - 1; j++)
+            printf((j == 1 || j == 2 * i - 1) ? "*" : " ");
+        printf("\n");
+    }
+    return 0;
+}
